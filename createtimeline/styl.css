@@ -1,0 +1,77 @@
+*{
+    box-sizing:border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+    background-image:url(https://plus.unsplash.com/premium_photo-1733317236155-b0e1a2930f37?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size:cover;
+   background-position:center;
+
+
+}
+#nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px 70px;
+    color:black;
+}
+#nav h2{
+          font-size:30px;
+}
+#nav i{
+    font-size:30px;
+    font-weight:800;
+}
+#nav button{
+   
+    background:transparent;
+    color:inherit;
+    cursor:pointer;
+    font:inherit;
+    padding:0;
+}
+#full{
+    height:100%;
+    width:40%;
+    position:absolute;
+    background-color:rgba(255,255,255,.92);
+    top:0;
+    right:0;
+    backdrop-filter: blur(10px);
+    padding:150px 60px;
+    overflow:hidden;
+    pointer-events:none;
+}
+#full h4{
+    font-size:50px;
+    font-weight:500;
+    margin-bottom:50px;
+
+
+}
+#full button{
+    position:absolute;
+    top:5%;
+    right:10%;
+    border:0;
+    background-color:white;
+    border-radius:5px;
+    padding:5px;
+    cursor:pointer;
+}
+#full i{
+    font-weight:800;
+    font-size:20px;
+}
+@media (max-width:700px){
+    #full{
+        width:80%;
+        padding:120px 30px;
+    }
+    #full h4{
+        font-size:36px;
+    }
+}
